@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append(os.pardir)
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 from dataset.mnist import load_mnist
 
 (x_train, t_train), (x_test, t_test) = load_mnist(flatten = True, normalize = False)
