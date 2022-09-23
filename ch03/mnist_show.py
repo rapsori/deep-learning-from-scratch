@@ -1,8 +1,4 @@
-import sys, os
-sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
-import numpy as np
-from dataset.mnist import load_mnist
-from PIL import Image
+from header import *
 
 def img_show(img):
     pil_img = Image.fromarray(np.uint8(img))
